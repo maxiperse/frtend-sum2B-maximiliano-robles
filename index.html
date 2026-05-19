@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VetCare - Clínica Veterinaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f7f7f7; }
+        /* Barra de navegación */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2d5c4d;
+            padding: 0.5rem 2rem;
+        }
+        .logo {
+            color: #fff;
+            font-size: 1.7rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        /* Hero */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 1rem 6rem 1rem;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(45,92,77,0.6);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        .cta-btn {
+            background: #ffd700;
+            color: #2d5c4d;
+            border: none;
+            padding: 0.9rem 2.2rem;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .cta-btn:hover {
+            background: #fff;
+        }
+        /* Servicios */
+        .servicios {
+            max-width: 1100px;
+            margin: -3rem auto 2rem auto;
+            padding: 2rem 1rem;
+        }
+        .servicios-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #2d5c4d;
+            margin-bottom: 2rem;
+        }
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .servicio-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 2rem 1.2rem 1.5rem 1.2rem;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .servicio-card:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .servicio-icon {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #2d5c4d;
+        }
+        .servicio-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.7rem;
+            color: #2d5c4d;
+        }
+        .servicio-desc {
+            color: #444;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .servicios-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav>
+        <div class="logo">🐾 VetCare</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Especialidades</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>VetCare</h1>
+            <p>Tu mascota en las mejores manos. Cuidamos su salud y bienestar con amor y profesionalismo.</p>
+            <a href="registro.html" class="cta-btn">¡Regístrate ahora!</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="servicios">
+        <div class="servicios-title">Nuestros Servicios</div>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <div class="servicio-icon">🩺</div>
+                <div class="servicio-title">Consultas Médicas y Diagnóstico</div>
+                <div class="servicio-desc">
+                    Evaluamos la salud de tu mascota con atención personalizada y tecnología avanzada para un diagnóstico preciso y rápido.
+                </div>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-icon">🔪</div>
+                <div class="servicio-title">Cirugía y Recuperación</div>
+                <div class="servicio-desc">
+                    Realizamos cirugías seguras y contamos con áreas de recuperación equipadas para garantizar el bienestar de tu compañero.
+                </div>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-icon">💉</div>
+                <div class="servicio-title">Vacunación y Desparasitación</div>
+                <div class="servicio-desc">
+                    Protege a tu mascota con nuestro programa integral de vacunación y desparasitación, adaptado a cada etapa de su vida.
+                </div>
+            </div>
+            <div class="servicio-card">
+                <div class="servicio-icon">✂️</div>
+                <div class="servicio-title">Grooming y Estética</div>
+                <div class="servicio-desc">
+                    Ofrecemos servicios de baño, corte y estética para que tu mascota luzca y se sienta genial en todo momento.
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
