@@ -4,146 +4,22 @@
     <meta charset="UTF-8">
     <title>VetCare - Clínica Veterinaria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f7f7f7; }
-        /* Barra de navegación */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #2d5c4d;
-            padding: 0.5rem 2rem;
-        }
-        .logo {
-            color: #fff;
-            font-size: 1.7rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.2s;
-        }
-        .nav-links a:hover {
-            color: #ffd700;
-        }
-        /* Hero */
-        .hero {
-            background: url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-            color: #fff;
-            text-align: center;
-            padding: 5rem 1rem 6rem 1rem;
-            position: relative;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            top:0; left:0; right:0; bottom:0;
-            background: rgba(45,92,77,0.6);
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-        }
-        .cta-btn {
-            background: #ffd700;
-            color: #2d5c4d;
-            border: none;
-            padding: 0.9rem 2.2rem;
-            font-size: 1.1rem;
-            border-radius: 30px;
-            cursor: pointer;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .cta-btn:hover {
-            background: #fff;
-        }
-        /* Servicios */
-        .servicios {
-            max-width: 1100px;
-            margin: -3rem auto 2rem auto;
-            padding: 2rem 1rem;
-        }
-        .servicios-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #2d5c4d;
-            margin-bottom: 2rem;
-        }
-        .servicios-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
-        }
-        .servicio-card {
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            padding: 2rem 1.2rem 1.5rem 1.2rem;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .servicio-card:hover {
-            transform: translateY(-5px) scale(1.03);
-        }
-        .servicio-icon {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            color: #2d5c4d;
-        }
-        .servicio-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.7rem;
-            color: #2d5c4d;
-        }
-        .servicio-desc {
-            color: #444;
-            font-size: 1rem;
-        }
-        @media (max-width: 600px) {
-            .hero h1 { font-size: 2rem; }
-            .servicios-title { font-size: 1.3rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barra de Navegación -->
+    
     <nav>
         <div class="logo">🐾 VetCare</div>
         <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Especialidades</a></li>
-            <li><a href="#">Tienda</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#equipo">Equipo</a></li>
             <li><a href="registro.html">Registrarse</a></li>
         </ul>
     </nav>
 
-    <!-- Sección Hero -->
-    <section class="hero">
+    <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>VetCare</h1>
             <p>Tu mascota en las mejores manos. Cuidamos su salud y bienestar con amor y profesionalismo.</p>
@@ -151,8 +27,7 @@
         </div>
     </section>
 
-    <!-- Sección de Servicios -->
-    <section class="servicios">
+    <section id="servicios" class="servicios">
         <div class="servicios-title">Nuestros Servicios</div>
         <div class="servicios-grid">
             <div class="servicio-card">
@@ -185,5 +60,131 @@
             </div>
         </div>
     </section>
+
+    <section id="especialidades" class="especialidades">
+        <div class="section-title">Nuestras Especialidades</div>
+        <div class="especialidades-grid">
+            <div class="especialidad-card">
+                <div class="especialidad-icon">🐕</div>
+                <div class="especialidad-title">Pequeños Animales</div>
+                <div class="especialidad-desc">
+                    Atención especializada para perros y gatos. Contamos con veterinarios expertos en medicina felina y canina con años de experiencia.
+                </div>
+            </div>
+            <div class="especialidad-card">
+                <div class="especialidad-icon">🦜</div>
+                <div class="especialidad-title">Aves y Exóticos</div>
+                <div class="especialidad-desc">
+                    Cuidamos de aves, reptiles, roedores y otros animales exóticos con protocolos especializados adaptados a cada especie.
+                </div>
+            </div>
+            <div class="especialidad-card">
+                <div class="especialidad-icon">🐰</div>
+                <div class="especialidad-title">Granja y Conejos</div>
+                <div class="especialidad-desc">
+                    Veterinaria de animales de granja, conejos y otras especies domésticas con enfoque preventivo y de bienestar animal.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="equipo">
+        <div class="section-title">Nuestro Equipo</div>
+        <div class="equipo-grid">
+            <div class="equipo-card">
+                <div class="equipo-avatar">👨‍⚕️</div>
+                <div class="equipo-name">Dr. Carlos Mendoza</div>
+                <div class="equipo-title">Médico Veterinario Cirujano</div>
+                <div class="equipo-desc">
+                    Con más de 15 años de experiencia en cirugía veterinaria y medicina felina. Especialista en procedimientos quirúrgicos complejos.
+                </div>
+            </div>
+            <div class="equipo-card">
+                <div class="equipo-avatar">👩‍⚕️</div>
+                <div class="equipo-name">Dra. María González</div>
+                <div class="equipo-title">Especialista en Medicina Preventiva</div>
+                <div class="equipo-desc">
+                    Dedicada a la prevención y vacunación. Experta en nutrición animal y comportamiento veterinario con 12 años de trayectoria.
+                </div>
+            </div>
+            <div class="equipo-card">
+                <div class="equipo-avatar">👨‍⚕️</div>
+                <div class="equipo-name">Dr. Roberto Silva</div>
+                <div class="equipo-title">Especialista en Animales Exóticos</div>
+                <div class="equipo-desc">
+                    Experto en aves, reptiles y pequeños mamíferos. Formación internacional en medicina de fauna exótica y silvestre.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios">
+        <div class="section-title">Testimonios de Nuestros Clientes</div>
+        <div class="testimonios-grid">
+            <div class="testimonio-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonio-text">
+                    "VetCare ha sido fundamental para la salud de mi perrito Max. El equipo es muy profesional y genuinamente se preocupa por nuestras mascotas. ¡Altamente recomendado!"
+                </div>
+                <div class="testimonio-owner">
+                    <strong>Juan Rodríguez</strong> - Max (Perro Labrador)
+                </div>
+            </div>
+            <div class="testimonio-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonio-text">
+                    "Mi gata Luna necesitaba una cirugía delicada. El Dr. Mendoza fue increíble, explicó todo con paciencia y Luna se recuperó perfectamente. Muchas gracias a todo el equipo."
+                </div>
+                <div class="testimonio-owner">
+                    <strong>Sofía López</strong> - Luna (Gata Persa)
+                </div>
+            </div>
+            <div class="testimonio-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonio-text">
+                    "Encuentro muy especial que VetCare tenga especialistas para animales exóticos. Mi loro Coco recibe la mejor atención posible. ¡Esto hace la diferencia!"
+                </div>
+                <div class="testimonio-owner">
+                    <strong>Patricia Moreno</strong> - Coco (Loro Amazónico)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>🐾 VetCare</h3>
+                <p>Clínica Veterinaria Integral</p>
+                <p>Tu mascota, nuestra misión.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Horarios</h4>
+                <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+                <p>Sábados: 9:00 AM - 5:00 PM</p>
+                <p>Domingos: 10:00 AM - 3:00 PM</p>
+                <p style="color: #e74c3c; font-weight: bold; margin-top: 0.5rem;">Emergencias 24/7</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📧 info@vetcare.com</p>
+                <p>📱 (555) 123-4567</p>
+                <p>💬 WhatsApp: (555) 987-6543</p>
+                <p>📍 Calle Principal 456, Ciudad Veterinaria</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="YouTube">▶️</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VetCare - Clínica Veterinaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

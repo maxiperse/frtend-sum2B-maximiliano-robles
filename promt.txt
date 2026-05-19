@@ -1,0 +1,7 @@
+prompt 1 etapa 1: ayudame a agregar iconos y tarjetas a mi pagina de forma ordenada
+         respuesta generada: me dio el codigo para agregar
+         Uso en el proyecto: Si lo use ya que me estaba enredando mucho y me daba errores
+
+prompt 2 etapa 1: ayudame a ordenar bien el css y agregar algunas variables de colores verde, turquesa y google fonts
+         respuesta generada: me dio el codigo para agregarlo
+         Uso en el proyecto: Si lo use ya que por lo mismo tenia desordenado y me estaba confundiendo mucho
